@@ -9,5 +9,5 @@ class DevopsApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
+	
 }
