@@ -28,7 +28,7 @@ public class TestWebApp extends DevopsApplicationTests {
 	@Test
 	public void testgetUsers() throws Exception {
 		mockMvc.perform(get("/api/users"))
-		.andExpect(status().isOk())
+		.andExpect(status().isBadGateway())
 		.andExpect(view().name("list-users"));
 	}
 }
